@@ -6,7 +6,7 @@ import { generateMetadata as genMeta } from '@/lib/seo'
 // la marca: la plantilla `%s | Flumen Solutions` ya la añade.
 export const metadata: Metadata = genMeta({
     title: 'Política de Privacidad',
-    description: 'Conoce cómo Flumen Solutions recopila, usa y protege tus datos personales.',
+    description: 'Conoce cómo Flumen Solutions y Flumenchat tratan tus datos personales, incluidos los de las integraciones autorizadas con Instagram y Meta.',
     path: '/privacidad',
 })
 
@@ -16,7 +16,7 @@ export default function PrivacyPage() {
             <div className="container max-w-4xl mx-auto px-6">
                 <div className="mb-12">
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Política de Privacidad</h1>
-                    <p className="text-slate-400">Última actualización: Noviembre 2025</p>
+                    <p className="text-slate-400">Última actualización: 27 de octubre de 2026</p>
                 </div>
 
                 <div className="space-y-8 text-slate-300 leading-relaxed">
@@ -305,6 +305,92 @@ export default function PrivacyPage() {
                         </p>
                     </section>
 
+                    <section id="instagram">
+                        <h2 className="text-2xl font-bold text-white mb-4">7.7. Instagram, Meta y automatizaciones de Flumenchat</h2>
+                        <p className="mb-4">
+                            Esta sección aplica a las integraciones de Instagram y Meta utilizadas por FLUMEN y por sus Clientes en Flumenchat.
+                            La conexión se realiza mediante los mecanismos oficiales de autorización de Meta. FLUMEN no solicita la contraseña
+                            de Instagram. El acceso se limita a las cuentas profesionales autorizadas, los permisos efectivamente concedidos y
+                            las funciones habilitadas por el Cliente y permitidas por Meta. Describir una función en esta Política no significa
+                            que esté disponible, activada o aprobada por Meta.
+                        </p>
+
+                        <h3 className="text-xl font-semibold text-white mb-2">Datos y finalidades de la integración</h3>
+                        <ul className="list-disc pl-5 mb-4 space-y-2">
+                            <li>
+                                <strong className="text-white">Cuenta y autorización:</strong> identificadores de la cuenta y de los activos autorizados,
+                                nombre de usuario, información de perfil disponible, permisos, tokens de acceso y su vigencia, para identificar
+                                la cuenta conectada, mantener la conexión y controlar el acceso de los usuarios del Cliente.
+                            </li>
+                            <li>
+                                <strong className="text-white">Mensajes y atención:</strong> identificadores de participantes y conversaciones,
+                                texto, adjuntos disponibles, fechas y eventos de interacción, para recibir y responder mensajes en una bandeja
+                                compartida, asignarlos a agentes, mantener el contexto de atención y ejecutar respuestas automáticas o asistentes de IA
+                                configurados por el Cliente. Las respuestas a historias se tratan cuando la API las entrega como mensajes.
+                            </li>
+                            <li>
+                                <strong className="text-white">Comentarios e interacciones:</strong> identificadores, texto, publicación relacionada,
+                                autor y fecha disponibles mediante la API, para gestionar o moderar comentarios y ejecutar reglas, como detectar
+                                palabras clave y enviar una respuesta pública o privada cuando Meta lo permita. Un comentario no autoriza
+                                por sí solo una secuencia ilimitada de mensajes privados.
+                            </li>
+                            <li>
+                                <strong className="text-white">Contenido de la cuenta:</strong> publicaciones, imágenes, videos, reels, historias y
+                                sus metadatos o enlaces, en los formatos disponibles y autorizados, para seleccionar contenido en automatizaciones,
+                                importarlo, sincronizarlo o descargar copias para el servicio contratado. Esta finalidad se limita al contenido
+                                de la cuenta autorizada que pueda obtenerse legítimamente; no incluye la descarga indiscriminada de cuentas ajenas.
+                            </li>
+                            <li>
+                                <strong className="text-white">Publicación e informes, cuando se habiliten:</strong> archivos, textos, instrucciones
+                                de publicación y métricas disponibles de la cuenta o de su contenido, para publicar o programar contenido e informar
+                                sobre el rendimiento de las funciones contratadas, previa concesión de los permisos correspondientes.
+                            </li>
+                        </ul>
+                        <p className="mb-4">
+                            Las automatizaciones respetan los permisos, ventanas de respuesta, límites y condiciones de las APIs de Meta.
+                            La conexión no concede acceso general a cuentas privadas, contraseñas o datos no entregados por las APIs oficiales,
+                            ni habilita el envío indiscriminado de mensajes a seguidores o personas que no hayan realizado una interacción elegible.
+                        </p>
+
+                        <h3 className="text-xl font-semibold text-white mb-2">Acceso, proveedores e inteligencia artificial</h3>
+                        <p className="mb-4">
+                            En las cuentas de sus Clientes, FLUMEN trata estos datos por cuenta del Cliente y conforme a sus instrucciones,
+                            de acuerdo con la sección 6; el Cliente determina las finalidades de atención y las automatizaciones que configura.
+                            En sus cuentas propias, FLUMEN actúa como Responsable. Pueden acceder los usuarios autorizados del Cliente y los
+                            proveedores de infraestructura, almacenamiento, soporte o IA necesarios para prestar el servicio, sujetos a las
+                            obligaciones de confidencialidad, seguridad y tratamiento descritas en esta Política. Meta trata información
+                            conforme a sus propias políticas.
+                        </p>
+                        <p className="mb-4">
+                            Cuando se activa un asistente de IA, el contenido necesario de la conversación y el contexto configurado pueden
+                            enviarse al proveedor utilizado para generar la respuesta o clasificar la solicitud. Este procesamiento puede
+                            realizarse fuera de Colombia. No implica que FLUMEN venda esos datos ni que los utilice para entrenar modelos
+                            generales de IA. Las respuestas automáticas pueden contener errores y el Cliente debe definir la supervisión
+                            y la atención humana apropiadas.
+                        </p>
+
+                        <h3 className="text-xl font-semibold text-white mb-2">Conservación, desconexión y eliminación</h3>
+                        <p className="mb-4">
+                            Los datos y copias de contenido se conservan durante el tiempo necesario para las finalidades del servicio,
+                            las instrucciones del Cliente y las obligaciones legales aplicables. Los tokens se protegen como credenciales de
+                            acceso. El administrador puede desconectar la cuenta desde la configuración de Instagram en Flumenchat y puede
+                            revocar la autorización desde Instagram o Meta. La desconexión deshabilita la integración, pero no elimina
+                            automáticamente los mensajes o archivos ya almacenados ni las copias existentes en Instagram.
+                        </p>
+                        <p>
+                            Para solicitar acceso, corrección, eliminación de datos de Instagram o revocatoria, escriba a{' '}
+                            <a href="mailto:contacto@flumensolutions.com?subject=Datos%20de%20Instagram%20-%20Flumenchat" className="text-white underline hover:no-underline">
+                                contacto@flumensolutions.com
+                            </a>{' '}
+                            con el asunto «Datos de Instagram - Flumenchat», indicando la cuenta o el negocio relacionado y el alcance de la
+                            solicitud. No envíe contraseñas ni tokens. Se verificará únicamente la información necesaria para atenderla;
+                            cuando el Cliente sea el Responsable, se coordinará su atención con él. Las solicitudes se tramitan conforme a
+                            la sección 13. Los datos se suprimen o anonimizan cuando corresponda; cualquier conservación obligatoria se
+                            limita a la finalidad que la justifique. La eliminación en los servicios de FLUMEN no borra los originales
+                            que permanezcan en Instagram o Meta.
+                        </p>
+                    </section>
+
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-4">8. Autorización para realizar el Tratamiento de los Datos Personales</h2>
                         <p className="mb-4">
@@ -330,7 +416,7 @@ export default function PrivacyPage() {
                             FLUMEN podrá transferir o transmitir Datos Personales a empresas vinculadas, proveedores tecnológicos, aliados estratégicos, subcontratistas, prestadores de servicios en la nube o entidades que intervengan en la ejecución de los servicios contratados, ubicados en Colombia o en el exterior, incluso cuando el país receptor no cuente con un nivel adecuado de protección de datos. En tales casos, la operación se realizará con fundamento en la Autorización del Titular, en los contratos de transmisión o transferencia exigidos por la normativa colombiana y en las medidas de seguridad adoptadas para la protección de la información.
                         </p>
                         <p className="mb-4">
-                            En el marco del desarrollo de soluciones tecnológicas basadas en inteligencia artificial o procesamiento automatizado de información, FLUMEN podrá utilizar servicios provistos por terceros internacionales, incluidos pero no limitados a proveedores como OpenAI, que podrán actuar como Encargados o Subencargados del Tratamiento. Dichos proveedores tratarán los Datos Personales exclusivamente para la ejecución técnica de las funcionalidades contratadas, sin conservarlos, almacenarlos ni utilizarlos para fines propios, de conformidad con las políticas de retención, seguridad y confidencialidad definidas por el proveedor y verificadas previamente por FLUMEN. En todo caso, FLUMEN mantendrá la condición de Responsable del Tratamiento frente a los Titulares y garantizará el cumplimiento de la legislación colombiana, sin perjuicio de la normativa extranjera aplicable al proveedor tecnológico.
+                            En el marco del desarrollo de soluciones tecnológicas basadas en inteligencia artificial o procesamiento automatizado de información, FLUMEN podrá utilizar servicios provistos por terceros internacionales, incluidos pero no limitados a proveedores como OpenAI, que podrán actuar como Encargados o Subencargados del Tratamiento. Dichos proveedores tratarán los Datos Personales para la ejecución técnica de las funcionalidades contratadas, conforme a las condiciones de tratamiento acordadas y a las configuraciones de retención, seguridad y confidencialidad aplicables al servicio. No se presume una ausencia total de almacenamiento por parte del proveedor; el acceso y la conservación deberán limitarse a lo necesario para el servicio y sus obligaciones aplicables. FLUMEN actuará como Responsable o Encargado según la relación descrita en la sección 6, sin perjuicio de la normativa extranjera aplicable al proveedor tecnológico.
                         </p>
                         <p className="mb-4">
                             FLUMEN también podrá suministrar Datos Personales a auditores, asesores jurídicos, entidades de control, o autoridades administrativas o judiciales cuando así sea requerido en ejercicio de sus competencias legales, mediante orden formal que cumpla con los requisitos jurídicos aplicables.
@@ -422,7 +508,7 @@ export default function PrivacyPage() {
                             FLUMEN podrá celebrar contratos de transmisión o transferencia con proveedores, aliados tecnológicos, encargados del procesamiento de información o entidades vinculadas, ubicadas dentro o fuera del territorio colombiano, incluyendo países que no cuenten con un nivel adecuado de protección de datos personales. En tales casos, FLUMEN verificará que el Encargado implemente medidas de seguridad apropiadas y que el Tratamiento se realice únicamente para las finalidades autorizadas.
                         </p>
                         <p>
-                            Cuando FLUMEN utilice servicios de terceros tecnológicos internacionales (incluyendo proveedores de inteligencia artificial, infraestructura en la nube o procesamiento automatizado de datos), la transferencia o transmisión se realizará bajo los mismos criterios de seguridad, confidencialidad y cumplimiento normativo, manteniéndose FLUMEN como Responsable del Tratamiento frente al Titular.
+                            Cuando FLUMEN utilice servicios de terceros tecnológicos internacionales (incluyendo proveedores de inteligencia artificial, infraestructura en la nube o procesamiento automatizado de datos), la transferencia o transmisión se realizará bajo los mismos criterios de seguridad, confidencialidad y cumplimiento normativo. FLUMEN conservará la calidad de Responsable o Encargado que corresponda al servicio y a las finalidades del Tratamiento, conforme a la sección 6.
                         </p>
                     </section>
 
@@ -446,7 +532,7 @@ export default function PrivacyPage() {
                     <section>
                         <h2 className="text-2xl font-bold text-white mb-4">17. Vigencia de la Política y control de cambios</h2>
                         <p>
-                            La presente Política entra en vigencia a partir del 15 de noviembre de 2025 y permanecerá vigente mientras FLUMEN realice Tratamiento de Datos Personales. La Política podrá ser modificada en cualquier momento de manera unilateral por parte de FLUMEN, sin perjuicio del respeto de los derechos de los Titulares.
+                            La presente Política entra en vigencia a partir del 15 de noviembre de 2025 y permanecerá vigente mientras FLUMEN realice Tratamiento de Datos Personales. La actualización del 27 de octubre de 2026 incorpora el tratamiento de datos de Instagram y Meta en Flumenchat y precisa el uso de proveedores de IA. La Política podrá ser modificada en cualquier momento de manera unilateral por parte de FLUMEN, sin perjuicio del respeto de los derechos de los Titulares.
                         </p>
                     </section>
                 </div>
